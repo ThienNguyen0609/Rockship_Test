@@ -1,0 +1,73 @@
+.fb-wrapper {
+    position: relative;
+    .fb-inner {
+        position: relative;
+        color: rgba(0, 0, 0, .65);
+        font-size: .75rem;
+        padding: 2.625rem 0 2.3125rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .top {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2.5rem;
+            .item {
+                font-size: .75rem;
+                padding: 0 1.5625rem;
+                text-transform: uppercase;
+            }
+        }
+        .bd-right {
+            border-right: 1px solid rgba(0, 0, 0, .09);
+        }
+        .mid {
+            width: 100%;
+            .mid-logo {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .item {
+                    color: rgba(0, 0, 0, .8);
+                    margin: 0 1.25rem;
+                    -webkit-text-decoration: none;
+                    text-decoration: none;
+                    .logo {
+                        background-image: url(../../../assets/images/footer/image1.png);
+                    }
+                    .position {
+                        background-position: 14.391143911439114% 99.41176470588235%;
+                        background-size: 551.6666666666666% 477.77777777777777%;
+                        height: 2.8125rem;
+                        width: 7.5rem;
+                    }
+                    .position-fake-logo {
+                        height: 3rem;
+                        width: 3rem;
+                        background-position: 1.6286644951140066% 92.21556886227545%;
+                        background-size: 1379.1666666666667% 447.9166666666667%;
+                    }
+                }
+            }
+            .text {
+                display: block;
+                margin-top: .5rem;
+                margin-bottom: 1.5625rem;
+                text-align: center;
+                width: 100%;
+            }
+        }
+        .bot {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            gap: .5rem;
+            .text {
+                line-height: 1.2;
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.pagination-wrapper {
+    margin-top: 1.25rem;
+    .pagination-inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .9375rem;
+        .item {
+            font-size: 1.25rem;
+            height: 1.875rem;
+            width: 2.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(0, 0, 0, .4);
+            border-radius: 2px;
+            cursor: pointer;
+        }
+        .active {
+            color: #fff;
+            background-color: var(--primary-color);
+        }
+    }
+}

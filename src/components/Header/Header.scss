@@ -1,0 +1,32 @@
+.header-wrapper {
+    position: relative;
+    .header-inner {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background: linear-gradient(-180deg, #f53d2d, #f63);
+    }
+}
+
+@keyframes show-popover {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes hide-popover {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: scale(0);
+    }
+}
