@@ -2,8 +2,15 @@ import "./ProductRatingItem.scss";
 
 import { BiSolidLike } from "react-icons/bi";
 import { AiFillStar } from "react-icons/ai";
+import ff from "../../../assets/images/product-rating/user/user1/user1.jpg"
 
 const ProductRatingItem = ({item}) => {
+  // function getImageUrl(num, name) {
+  //   return new URL(`src/assets/images/product-rating/user/user${num}/${name}.png`, import.meta.url).href
+  // }
+  function getImageUrl(imageURL) {
+    return new URL(imageURL, import.meta.url).href
+  }
   return (
     <>
       <div className="product-rating__item">
@@ -35,7 +42,7 @@ const ProductRatingItem = ({item}) => {
           {item.userImage && (
             <img
               className="avatar__img"
-              src={require(item.userImage)}
+              src={getImageUrl(item.userImage)}
               alt="img"
             />
           )}
@@ -58,7 +65,7 @@ const ProductRatingItem = ({item}) => {
                 <img
                   key={index}
                   className="product-rating__image"
-                  src={require(imgItem)}
+                  src={getImageUrl(imgItem)}
                   alt="img"
                 />
               ))}
